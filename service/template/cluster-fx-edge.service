@@ -1,0 +1,14 @@
+[Unit]
+Description=Cluster FX Edge Service - Runs an instance of Cluster FX Edge Service
+Documentation=https://clusterfx.org
+After=network.target
+
+[Service]
+Type=simple
+User=$USER
+WorkingDirectory=/var/lib/cluster-fx
+ExecStart=node /usr/local/bin/ts-node /var/lib/cluster-fx/edge.service.ts
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
