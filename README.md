@@ -1,10 +1,16 @@
-#cluster-fx
+# cluster-fx
 
-###Installation
+Lightweight Pub/Sub Socket Network Transport Layer with 
+Service Discovery, TOF & Delivery Receipts, and Dynamic Topology
+
+### Installation
 Coming soon
 
-###Deployment
+### Deployment
 Coming soon
 
-###Pub/Sub
+### Pub/Sub
 Coming soon
+
+License: MIT \
+With love, from OakFrame
