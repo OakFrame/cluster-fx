@@ -1,0 +1,37 @@
+{
+  "name": "cluster-fx",
+  "version": "0.0.2",
+  "description": "Cluster FX, Edge - Gateway - Daemon based computation delivery system.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "bash clean.sh",
+    "ios": "yarn build && bash build-releases.sh",
+    "release": "yarn build && bash build-releases.sh",
+    "build": "yarn clean && bash compile.sh",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "yarn clean && cd service && ts-node app.service.ts"
+  },
+  "author": "oakframe.org",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.3.0",
+    "body-parser": "^1.19.0",
+    "canvas": "^2.8.0",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "ejs": "^3.1.6",
+    "evil-dns": "^0.2.0",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "node-webcam": "^0.8.0",
+    "oak-studio": "file:../oak-studio",
+    "passport": "^0.4.1",
+    "passport-google-oauth": "^2.0.0",
+    "raw-loader": "^4.0.2",
+    "uuid": "^8.3.2",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {}
+}
